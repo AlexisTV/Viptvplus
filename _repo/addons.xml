@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="VIPTV ASTRO" name="VIPTV [COLOR crimson]ASTRO[/COLOR]" version="2.8" provider-name="VIPTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">VIPTV [COLOR crimson]WIZARD[/COLOR]</summary>
+    <description lang="en">Build para Kodi 17 y 18
+</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
     <addon id="repository.viptvplus" name="viptvplus" version="0.0.2" provider-name="AlexisTV">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -15,21 +31,5 @@
             <description>repositorio para descargar la build</description>
             <platform>all</platform>
     </extension>
-</addon>
-
-<addon id="VIPTV ASTRO" name="VIPTV [COLOR crimson]ASTRO[/COLOR]" version="2.7" provider-name="VIPTV">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">VIPTV [COLOR crimson]WIZARD[/COLOR]</summary>
-    <description lang="en">Build para Kodi 17 y 18
-</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 </addons>
